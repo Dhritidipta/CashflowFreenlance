@@ -2,11 +2,6 @@
 import requests
 
 import pandas as pd
- 
-# Step 1: Define the API endpoint
-
-###
-
 
 
 def get_all_companies_df():
