@@ -1,18 +1,15 @@
-
 import requests
-
 import pandas as pd
 
 
-def get_all_companies_df():
+base_url = 'http://localhost:9090/'
 
-    #API - GET - /companies get all companies
+#API - GET - /companies get all companies
+def get_all_companies_df():
    
-    base_url = 'http://localhost:8080/'
     get_all_companies_url = f'{base_url}companies'  # Example API endpoint
-    
-    params = {'limit':10, 
-             'after-id':1}
+    params = {'limit':100, 
+             'after-id':1} 
     # Step 2: Make a GET request to fetch data
 
     response = requests.get(get_all_companies_url,params)
@@ -33,13 +30,15 @@ def get_all_companies_df():
 
     return get_all_companies_df
 
-def get_company_df():
-     #API - GET - /companies/{company-id} get a company
+
+
+ #API - GET - /companies/{company-id} get a company
+def get_company_df(id):
    
-    base_url = "http://localhost:8080/"
+    # base_url = "http://localhost:8080/"
 
     company_id = 1
-    get_company_url = f'{base_url}companies/{company_id}'  
+    get_company_url = f'{base_url}companies/{id}'  
     
     
     # Step 2: Make a GET request to fetch data
@@ -63,10 +62,13 @@ def get_company_df():
 
     return get_company_df
 
+
+
+#API - GET - /exchange-rates get all exchange rates
 def get_exchange_rates_df():
-    #API - GET - /exchange-rates get all exchange rates
+
    
-    base_url = "http://localhost:8080/"
+    # base_url = "http://localhost:8080/"
     get_exchange_rates_url = f'{base_url}exchange-rates'  
     
     
@@ -92,20 +94,24 @@ def get_exchange_rates_df():
     return get_exchange_rates_df
 
 
+
+#API - GET - /transactions/sepa get all Sepa transactions, newest first
 def get_all_sepa_transactions_df():
-     #API - GET - /transactions/sepa get all Sepa transactions, newest first
-   
-    base_url = "http://localhost:8080/"
+     
+    # base_url = "http://localhost:8080/"
     get_all_sepa_transactions_url = f'{base_url}transactions/sepa'  # Example API endpoint
     
-    params = {'limit':5000, 
-             'after-timestamp':'2020-09-26T00:00:00Z',
+    params = {'limit':100, 
              'after-uuid':'00000000-0000-0000-0000-000000000000',
-             'payer': 'DE77193919112673928344',
-             'sender': 'NL28SZUK8962850954'}
+            }
     # Step 2: Make a GET request to fetch data
 
     response = requests.get(get_all_sepa_transactions_url,params)
+
+    data = response.json()  # Get JSON data from the response
+
+    get_all_sepa_transactions_df = pd.DataFrame(data)  # Convert JSON data to a DataFrame
+    
     
     # Check if the request was successful
 
@@ -124,17 +130,15 @@ def get_all_sepa_transactions_df():
 
     return get_all_sepa_transactions_df
 
+
+#API - GET - /transactions/swift get all Swift transactions, newest first 
 def get_all_swift_transactions_df():
-    #API - GET - /transactions/swift get all Swift transactions, newest first
-   
-    base_url = "http://localhost:8080/"
+     # base_url = "http://localhost:8080/"
     get_all_swift_transactions_url = f'{base_url}transactions/swift'  # Example API endpoint
     
-    params = {'limit':5000, 
-             'after-timestamp':'2024-09-28T00:00:00Z',
-             'after-uuid':00000000-0000-0000-0000-000000000000,
-             'sender': 'GB51SJEV83747591864014',
-             'beneficiary': 'FR5875918640140818391314958'}
+    params = {'limit':100, 
+             'after-uuid':'00000000-0000-0000-0000-000000000000',
+            }
     # Step 2: Make a GET request to fetch data
 
     response = requests.get(get_all_swift_transactions_url,params)
@@ -148,14 +152,21 @@ def get_all_swift_transactions_df():
         data = response.json()  # Get JSON data from the response
 
         get_all_swift_transactions_df = pd.DataFrame(data)  # Convert JSON data to a DataFrame
-    
         
 
     else:
 
-        return -1
-
+        return "-1"
+    
     return get_all_swift_transactions_df
+
+    # return get_all_swift_transactions_df
+
+    data = response.json()  # Get JSON data from the response
+
+    get_all_swift_transactions_df = pd.DataFrame(data)  # Convert JSON data to a DataFrame
+    print(get_all_swift_transactions_df)
+
 
 
 
