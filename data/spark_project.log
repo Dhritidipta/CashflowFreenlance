@@ -1,0 +1,88 @@
+2024-10-02 00:55:27,192 - pyspark_project - INFO - Spark session started.
+2024-10-02 00:55:27,192 - pyspark_project - INFO - Spark session started.
+2024-10-02 00:55:41,769 - pyspark_project - INFO - SWIFT table currencies converted to EUR.
+2024-10-02 00:55:41,769 - pyspark_project - INFO - SWIFT table currencies converted to EUR.
+2024-10-02 00:55:41,784 - pyspark_project - INFO - Merging SWIFT & SEPA tables into one
+2024-10-02 00:55:41,784 - pyspark_project - INFO - Merging SWIFT & SEPA tables into one
+2024-10-02 00:56:19,866 - pyspark_project - INFO - Company wise current account balance table formed.
+2024-10-02 00:56:19,866 - pyspark_project - INFO - Company wise current account balance table formed.
+2024-10-02 00:56:40,219 - pyspark_project - INFO - List of countries the client transacts within table formed
+2024-10-02 00:56:40,219 - pyspark_project - INFO - List of countries the client transacts within table formed
+2024-10-02 00:56:53,723 - pyspark_project - INFO - Master dataset created.
+2024-10-02 00:56:53,723 - pyspark_project - INFO - Master dataset created.
+2024-10-02 00:57:06,574 - pyspark_project - INFO - Converted master dataset from Spark dataframe to Pandas dataframe successfully.
+2024-10-02 00:57:06,574 - pyspark_project - INFO - Converted master dataset from Spark dataframe to Pandas dataframe successfully.
+2024-10-02 00:57:06,576 - pyspark_project - INFO - Loaded master dataset to csv successfully.
+2024-10-02 00:57:06,576 - pyspark_project - INFO - Loaded master dataset to csv successfully.
+2024-10-02 01:00:28,251 - pyspark_project - ERROR - Error: Spark session could not start: {e}
+2024-10-02 01:00:28,251 - pyspark_project - ERROR - Error: Spark session could not start: {e}
+2024-10-02 01:00:28,251 - pyspark_project - ERROR - Error: Spark session could not start: {e}
+2024-10-02 01:00:28,251 - pyspark_project - ERROR - Error: Spark session could not start: {e}
+2024-10-02 01:00:43,468 - pyspark_project - INFO - SWIFT table currencies converted to EUR.
+2024-10-02 01:00:43,468 - pyspark_project - INFO - SWIFT table currencies converted to EUR.
+2024-10-02 01:00:43,468 - pyspark_project - INFO - SWIFT table currencies converted to EUR.
+2024-10-02 01:00:43,468 - pyspark_project - INFO - SWIFT table currencies converted to EUR.
+2024-10-02 01:00:43,483 - pyspark_project - INFO - Merging SWIFT & SEPA tables into one
+2024-10-02 01:00:43,483 - pyspark_project - INFO - Merging SWIFT & SEPA tables into one
+2024-10-02 01:00:43,483 - pyspark_project - INFO - Merging SWIFT & SEPA tables into one
+2024-10-02 01:00:43,483 - pyspark_project - INFO - Merging SWIFT & SEPA tables into one
+2024-10-02 01:01:23,510 - pyspark_project - INFO - Company wise current account balance table formed.
+2024-10-02 01:01:23,510 - pyspark_project - INFO - Company wise current account balance table formed.
+2024-10-02 01:01:23,510 - pyspark_project - INFO - Company wise current account balance table formed.
+2024-10-02 01:01:23,510 - pyspark_project - INFO - Company wise current account balance table formed.
+2024-10-02 01:01:44,941 - pyspark_project - INFO - List of countries the client transacts within table formed
+2024-10-02 01:01:44,941 - pyspark_project - INFO - List of countries the client transacts within table formed
+2024-10-02 01:01:44,941 - pyspark_project - INFO - List of countries the client transacts within table formed
+2024-10-02 01:01:44,941 - pyspark_project - INFO - List of countries the client transacts within table formed
+2024-10-02 01:01:58,375 - pyspark_project - INFO - Master dataset created.
+2024-10-02 01:01:58,375 - pyspark_project - INFO - Master dataset created.
+2024-10-02 01:01:58,375 - pyspark_project - INFO - Master dataset created.
+2024-10-02 01:01:58,375 - pyspark_project - INFO - Master dataset created.
+2024-10-02 01:02:11,622 - pyspark_project - INFO - Converted master dataset from Spark dataframe to Pandas dataframe successfully.
+2024-10-02 01:02:11,622 - pyspark_project - INFO - Converted master dataset from Spark dataframe to Pandas dataframe successfully.
+2024-10-02 01:02:11,622 - pyspark_project - INFO - Converted master dataset from Spark dataframe to Pandas dataframe successfully.
+2024-10-02 01:02:11,622 - pyspark_project - INFO - Converted master dataset from Spark dataframe to Pandas dataframe successfully.
+2024-10-02 01:02:11,625 - pyspark_project - INFO - Loaded master dataset to csv successfully.
+2024-10-02 01:02:11,625 - pyspark_project - INFO - Loaded master dataset to csv successfully.
+2024-10-02 01:02:11,625 - pyspark_project - INFO - Loaded master dataset to csv successfully.
+2024-10-02 01:02:11,625 - pyspark_project - INFO - Loaded master dataset to csv successfully.
+2024-10-02 01:04:24,731 - pyspark_project - INFO - Spark session started.
+2024-10-02 01:04:24,731 - pyspark_project - INFO - Spark session started.
+2024-10-02 01:04:24,731 - pyspark_project - INFO - Spark session started.
+2024-10-02 01:04:24,731 - pyspark_project - INFO - Spark session started.
+2024-10-02 01:04:24,731 - pyspark_project - INFO - Spark session started.
+2024-10-02 01:04:39,539 - pyspark_project - INFO - SWIFT table currencies converted to EUR.
+2024-10-02 01:04:39,539 - pyspark_project - INFO - SWIFT table currencies converted to EUR.
+2024-10-02 01:04:39,539 - pyspark_project - INFO - SWIFT table currencies converted to EUR.
+2024-10-02 01:04:39,539 - pyspark_project - INFO - SWIFT table currencies converted to EUR.
+2024-10-02 01:04:39,539 - pyspark_project - INFO - SWIFT table currencies converted to EUR.
+2024-10-02 01:04:39,557 - pyspark_project - INFO - Merging SWIFT & SEPA tables into one
+2024-10-02 01:04:39,557 - pyspark_project - INFO - Merging SWIFT & SEPA tables into one
+2024-10-02 01:04:39,557 - pyspark_project - INFO - Merging SWIFT & SEPA tables into one
+2024-10-02 01:04:39,557 - pyspark_project - INFO - Merging SWIFT & SEPA tables into one
+2024-10-02 01:04:39,557 - pyspark_project - INFO - Merging SWIFT & SEPA tables into one
+2024-10-02 01:05:17,976 - pyspark_project - INFO - Company wise current account balance table formed.
+2024-10-02 01:05:17,976 - pyspark_project - INFO - Company wise current account balance table formed.
+2024-10-02 01:05:17,976 - pyspark_project - INFO - Company wise current account balance table formed.
+2024-10-02 01:05:17,976 - pyspark_project - INFO - Company wise current account balance table formed.
+2024-10-02 01:05:17,976 - pyspark_project - INFO - Company wise current account balance table formed.
+2024-10-02 01:05:37,191 - pyspark_project - INFO - List of countries the client transacts within table formed
+2024-10-02 01:05:37,191 - pyspark_project - INFO - List of countries the client transacts within table formed
+2024-10-02 01:05:37,191 - pyspark_project - INFO - List of countries the client transacts within table formed
+2024-10-02 01:05:37,191 - pyspark_project - INFO - List of countries the client transacts within table formed
+2024-10-02 01:05:37,191 - pyspark_project - INFO - List of countries the client transacts within table formed
+2024-10-02 01:05:49,693 - pyspark_project - INFO - Master dataset created.
+2024-10-02 01:05:49,693 - pyspark_project - INFO - Master dataset created.
+2024-10-02 01:05:49,693 - pyspark_project - INFO - Master dataset created.
+2024-10-02 01:05:49,693 - pyspark_project - INFO - Master dataset created.
+2024-10-02 01:05:49,693 - pyspark_project - INFO - Master dataset created.
+2024-10-02 01:06:01,945 - pyspark_project - INFO - Converted master dataset from Spark dataframe to Pandas dataframe successfully.
+2024-10-02 01:06:01,945 - pyspark_project - INFO - Converted master dataset from Spark dataframe to Pandas dataframe successfully.
+2024-10-02 01:06:01,945 - pyspark_project - INFO - Converted master dataset from Spark dataframe to Pandas dataframe successfully.
+2024-10-02 01:06:01,945 - pyspark_project - INFO - Converted master dataset from Spark dataframe to Pandas dataframe successfully.
+2024-10-02 01:06:01,945 - pyspark_project - INFO - Converted master dataset from Spark dataframe to Pandas dataframe successfully.
+2024-10-02 01:06:01,947 - pyspark_project - INFO - Loaded master dataset to csv successfully.
+2024-10-02 01:06:01,947 - pyspark_project - INFO - Loaded master dataset to csv successfully.
+2024-10-02 01:06:01,947 - pyspark_project - INFO - Loaded master dataset to csv successfully.
+2024-10-02 01:06:01,947 - pyspark_project - INFO - Loaded master dataset to csv successfully.
+2024-10-02 01:06:01,947 - pyspark_project - INFO - Loaded master dataset to csv successfully.
