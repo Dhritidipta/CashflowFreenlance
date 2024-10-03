@@ -5,11 +5,13 @@ import pandas as pd
 base_url = 'http://localhost:9090/'
 
 #API - GET - /companies get all companies
-def get_all_companies_df():
-   
+def get_all_companies_df(limit=-1):
+  
+    params = {}
+    if limit != -1:
+        params = {'limit': limit} 
+
     get_all_companies_url = f'{base_url}companies'  # Example API endpoint
-    params = {'limit':100, 
-             'after-id':1} 
     # Step 2: Make a GET request to fetch data
 
     response = requests.get(get_all_companies_url,params)
@@ -29,8 +31,6 @@ def get_all_companies_df():
         return -1
 
     return get_all_companies_df
-
-
 
  #API - GET - /companies/{company-id} get a company
 def get_company_df(id):
@@ -96,12 +96,12 @@ def get_exchange_rates_df():
 
 
 #API - GET - /transactions/sepa get all Sepa transactions, newest first
-def get_all_sepa_transactions_df():
+def get_all_sepa_transactions_df(limit):
      
     # base_url = "http://localhost:8080/"
     get_all_sepa_transactions_url = f'{base_url}transactions/sepa'  # Example API endpoint
     
-    params = {'limit':100, 
+    params = {'limit':limit, 
              'after-uuid':'00000000-0000-0000-0000-000000000000',
             }
     # Step 2: Make a GET request to fetch data
@@ -132,11 +132,11 @@ def get_all_sepa_transactions_df():
 
 
 #API - GET - /transactions/swift get all Swift transactions, newest first 
-def get_all_swift_transactions_df():
+def get_all_swift_transactions_df(limit):
      # base_url = "http://localhost:8080/"
     get_all_swift_transactions_url = f'{base_url}transactions/swift'  # Example API endpoint
     
-    params = {'limit':100, 
+    params = {'limit':limit, 
              'after-uuid':'00000000-0000-0000-0000-000000000000',
             }
     # Step 2: Make a GET request to fetch data
