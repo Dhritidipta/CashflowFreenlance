@@ -36,14 +36,14 @@ class TestDataProcessing(unittest.TestCase):
 
     def test_sepa_transaction_data(self):
         # Test if SEPA transaction data is being fetched correctly as a pandas DataFrame
-        df = get_all_sepa_transactions_df(limit=1000)
+        df = get_all_sepa_transactions_df()
         self.assertIsInstance(df, pd.DataFrame, "Expected a pandas DataFrame")
         self.assertGreater(len(df), 0, "SEPA Transactions DataFrame is empty")
         self.assertIn("id", df.columns, "Transaction ID column missing")
 
     def test_swift_transaction_data(self):
         # Test if SEPA transaction data is being fetched correctly as a pandas DataFrame
-        df = get_all_swift_transactions_df(limit=1000)
+        df = get_all_swift_transactions_df()
         self.assertIsInstance(df, pd.DataFrame, "Expected a pandas DataFrame")
         self.assertGreater(len(df), 0, "SWIFT Transactions DataFrame is empty")
         self.assertIn("id", df.columns, "Transaction ID column missing")
